@@ -33,6 +33,8 @@ public class TransacaoService {
         }
 
         listaTransacao.add(dto);
+
+        log.info("Transação inserida");
     }
 
     public void limparTransacoes(){

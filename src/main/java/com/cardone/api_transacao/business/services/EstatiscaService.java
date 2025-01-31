@@ -20,12 +20,17 @@ public class EstatiscaService {
 
     public EstaticasResponseDTO calculaEstatisticas(Integer intervaloTempo){
 
-        log.info("Calculo das estatisticas do periodo");
+        log.info("Calculo das estatisticas do periodo, periodo " + intervaloTempo);
         List<TransacaoRequestDTO> lista = transacaoService.buscarTransacaoes(intervaloTempo);
+
+        if(lista.isEmpty()){
+            return new EstaticasResponseDTO(0L,0.0,0.0,0.0,0.0);
+        }
 
         // Pega os valores recuperados e transforma para que possamos chamar as funções DoubleSummaryStatistics
         DoubleSummaryStatistics estatisticas = lista.stream().mapToDouble(TransacaoRequestDTO::valor).summaryStatistics();
 
+        log.info("Termino do calculo estatisticas");
         //Retorna os valores calculados pelo DoubleSummaryStatistics
         return new EstaticasResponseDTO(estatisticas.getCount(),
                                         estatisticas.getSum(),
