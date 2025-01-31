@@ -6,6 +6,7 @@ Desenvolvimento do desafio de programação para vaga do Itaú
 - Observabilidade com Spring Actuator
 - Logs com SLF4J
 - Tratamento de erros - GlobalExceptionHandler
+- DoubleSummaryStatistics para realizar os calculos solicitados
 
 
 # TEXTO ORIGINAL DO DESAFIO
