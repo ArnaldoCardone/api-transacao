@@ -1,6 +1,14 @@
 # api-transacao
-Desafio de programação para vaga do Itau
+Desenvolvimento do desafio de programação para vaga do Itaú
 
+- Desenvolvido utilizando Java e Spring Boot
+- Documentação da API com Swagger
+- Observabilidade com Spring Actuator
+- Logs com SLF4J
+- Tratamento de erros - GlobalExceptionHandler
+
+
+# TEXTO ORIGINAL DO DESAFIO
 # Itaú Unibanco - Desafio de Programação
 
 Este é um desafio bacana tanto de desenvolvimento de software quanto de engenharia de software. Queremos testar sua capacidade de construir um software com várias partes diferentes funcionando em conjunto!
