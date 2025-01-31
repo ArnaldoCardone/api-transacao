@@ -2,7 +2,7 @@
 Desenvolvimento do desafio de programação para vaga do Itaú
 
 - Desenvolvido utilizando Java e Spring Boot
-- Documentação da API com Swagger
+- Documentação da API com Swagger (http://localhost:8080/swagger-ui/index.html)
 - Observabilidade com Spring Actuator
 - Logs com SLF4J
 - Tratamento de erros - GlobalExceptionHandler
